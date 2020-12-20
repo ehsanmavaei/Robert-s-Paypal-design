@@ -44,10 +44,51 @@ nav .flex{
 }
 
 
+.hero{
+    background-color: #acacac;
+    min-height: 300px;
+    color: #efefef;
+    text-align: center;
+    h1{
+        padding:20px;
+    font-size: 2.5rem;
+    }
+    p{
+        padding: 0 220px;
+    }
 
+    
+}
+.hero-blue-bar{
+    .flex{
+        justify-content: center;
+    }
+    .container{
+        max-width: 800px;
+    }
+    background-color: $primary-bg-color;
+    color: #acacac;
+    padding: 20px;
+    min-height: 50px;
+    .btn-long{
+       border:1px solid white;
+       margin: 0 70px;
+    }
+    // p{
+    //    margin: 0 80px;
+
+
+    // }
+}
   
 
 
+.hero {
+    
+  
+    
+    }
+    
 
 
 
@@ -62,6 +103,12 @@ nav .flex{
         text-align: center;
      
     }
+ 
+    .hero-blue-bar .container{
+        max-width: 1100px;
+        margin: 0;
+        padding: 0;      
+    }
     nav .flex{
         justify-content: center;
        padding-right: 0;
@@ -71,6 +118,11 @@ nav .flex{
     }
     ul li{
         padding:10px;
+    }
+    .hero{
+        p{
+            padding:  0 80px;
+        }
     }
 
 }
@@ -82,4 +134,17 @@ nav .flex{
         
       
     }
+  
+    .hero-blue-bar .container >*{
+       padding: 10px;      
+    }
+    .hero-blue-bar .flex{
+        flex-direction: column;
+    }
+    .hero{
+        p{
+            padding:  0 20px;
+        }
+}
+
 }

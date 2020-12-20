@@ -95,11 +95,19 @@
   align-items: center;
   height: 100%;
 }
+.btn:focus{outline: none;}
   .btn{
+
+    cursor: pointer;
+    
     background-color: $primary-bg-color;
     color: #ffffff;
     padding: 12px;
     border: none;
     border-radius: 5px;
 
+  }
+  .btn-long{
+    padding:  10px 50px;
+    border-radius: 40px;
   }
