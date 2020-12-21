@@ -13,6 +13,13 @@
         color: #ffffff;
     }
 }
+.dot {
+    height: 11px;
+    width: 11px;
+    background-color: rgb(148, 138, 138);
+    border-radius: 50%;
+    display: inline-block;
+  }
 .head .grid{
    
     gap: 10px;
@@ -46,7 +53,7 @@ nav .flex{
 
 .hero{
     background-color: #acacac;
-    min-height: 300px;
+    min-height: 400px;
     color: #efefef;
     text-align: center;
     h1{
@@ -89,12 +96,139 @@ nav .flex{
     
     }
     
+.paypal .container{
+    max-width: 800px;
+    h1{
+        color: #404040;
+        font-size: 2rem;
+    }
+    p{
+        line-height: 2;
+        color: #6f6f6f;
+    }
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px,1fr));
+
+    grid-template-rows: auto;
+    gap: 20px;
+   
+
+}
 
 
 
 
+.windows {
+    background-color: #d5d3d3;
+    min-height: 500px;
+    overflow: auto;
+    
+      .btn{
+        padding: 10px 80px;
+      }
+    }
 
+    .btcenter{
+        margin: 0 auto;
+       text-align: center;}
 
+.boxes{
+    display: grid;
+    grid-template-columns: 1fr 50px 1fr 50px 1fr
+        
+}
+.arrow{
+    align-self: center;
+    font-size: 60px;
+    text-align: center;
+    color: rgb(168, 168, 155);
+
+}
+.box{
+  justify-self: center;
+    height: 200px;
+    width: 240px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    border-radius: 5px;
+    .head{
+        background-color: #e5e1e1;
+        padding: 6px;
+
+    }
+    .body{
+        min-height: 100%;
+        background-color: white;
+    }
+}
+
+.guide-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    .numbers{
+        text-align: center;
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+      color: black;
+        border-radius: 50%;
+        line-height: 50px;
+        border:1px solid black
+    }
+    .flex>*{
+        margin: 3px;
+    }
+
+    
+
+}
+.join{
+    h1{
+        color: rgb(196, 205, 247);
+    }
+    background-color: $primary-bg-color;
+ .join-columns{
+     display: grid;
+     grid-template-columns: repeat(4,1fr);
+     grid-template-rows: 1fr;
+     gap: 20px;
+     color: rgb(196, 205, 247);
+
+ }
+
+}
+
+.get-started{
+    background-color:#efefef;
+    min-height: 200px;
+    
+   .container{
+    padding-top: 50px;
+   }
+   .btn{
+    margin-top: 40px;
+    padding: 10px 70px;
+   }
+}
+
+footer{
+   
+   
+    min-height: 100px;
+}
+footer .flex{
+    justify-content: space-between;
+   
+}
+footer li{
+    padding: 0 10px;
+    a{
+        color: black;
+        font-weight: 700;
+    }
+}
 @media(max-width:930px){
     .head .grid{
         grid-template-columns:1fr;
@@ -109,6 +243,7 @@ nav .flex{
         margin: 0;
         padding: 0;      
     }
+    
     nav .flex{
         justify-content: center;
        padding-right: 0;
@@ -126,6 +261,49 @@ nav .flex{
     }
 
 }
+@media(max-width:862px){
+    .boxes{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 1fr;
+
+
+
+            
+    }
+  
+    .guide-grid{
+        grid-template-columns: 1fr;
+       
+    }
+    .guide-grid .flex{
+        justify-content: flex-start;
+    }
+    .join-columns{
+       
+        grid-template-columns: repeat(2,1fr) !important;
+
+        grid-template-rows: 1fr 1fr; 
+        gap: 10px;
+        color: rgb(196, 205, 247);
+   
+    }
+    .arrow{
+      display: none;
+    }
+}
+@media(max-width:798px){
+ 
+       
+    .boxes{
+        gap: 40px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repat(3, 1fr);
+    }
+    .box{
+        width: 100%;
+    }
+}
 
 @media(max-width:560px){
     nav .flex{
@@ -134,7 +312,18 @@ nav .flex{
         
       
     }
-  
+    .join-columns{
+       
+        grid-template-columns: 1fr !important;
+
+        grid-template-rows: repeat(4,1fr); 
+        gap: 10px;
+        color: rgb(196, 205, 247);
+   
+    }
+    footer .flex{
+        flex-direction: column;
+    }
     .hero-blue-bar .container >*{
        padding: 10px;      
     }
@@ -145,6 +334,8 @@ nav .flex{
         p{
             padding:  0 20px;
         }
-}
 
+    
+
+}
 }

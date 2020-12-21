@@ -94,6 +94,7 @@
   justify-content: center;
   align-items: center;
   height: 100%;
+
 }
 .btn:focus{outline: none;}
   .btn{
@@ -110,4 +111,7 @@
   .btn-long{
     padding:  10px 50px;
     border-radius: 40px;
+  }
+  .center{
+    text-align: center;
   }
