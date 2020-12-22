@@ -266,6 +266,10 @@ nav .flex {
   padding: 10px 80px;
 }
 
+.windows li a {
+  padding: 10px;
+}
+
 .btcenter {
   margin: 0 auto;
   text-align: center;
